@@ -5,12 +5,44 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "color": "^0.11.3"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "react"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "plugins": [
+      "import"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "del": "^2.2.2",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "webpack-stream": "^3.2.0"
   }
 }
